@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #E5E5E5;
+}
+
+.umr {
+  margin: auto;
+  width: 80%;
+}
+.umr .containerr {
+  margin-top: 120px;
+  width: 100%;
+}
+.umr .containerr .allbooks-head {
+  display: flex;
+}
+.umr .containerr .allcontainer-books {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.umr .containerr .allcontainer-books .books-child {
+  margin: auto;
+}
+.umr .containerr .allbooks {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  display: flex;
+  align-items: center;
+  color: #241400;
+}
+.umr .containerr .allbooks-head ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.umr .containerr li {
+  margin: 0 40px;
+  width: 60px;
+  height: 61px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: #241400;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.umr .containerr .slide-container {
+  max-width: 1120px;
+  width: 100%;
+  margin-bottom: 206px;
+}
+.umr .containerr .slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+.umr .containerr .card {
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 24px;
+  margin: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  width: 184px;
+  height: 360px;
+}
+.umr .containerr .card .image-content .card-image {
+  width: 135px;
+  height: 220px;
+}
+.umr .containerr .card .image-content .card-image img {
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+}
+.umr .containerr .image-content,
+.umr .containerr .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.umr .containerr .image-content {
+  row-gap: 5px;
+  position: relative;
+}
+.umr .containerr .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+.umr .containerr .card-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.umr .containerr .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 134.23px;
+  height: 190px;
+}
+.umr .containerr .name {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-style: normal;
+  margin: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #241400;
+}
+.umr .containerr .button {
+  border: none;
+  padding: 8px 16px;
+  background: #E16A00;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  color: #FFFFFF;
+}
+.umr .containerr .button:hover {
+  background-color: #a85a16;
+}
+.umr .containerr .bestseller {
+  margin: 128px 0;
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  /* identical to box height, or 49px */
+  display: flex;
+  justify-content: center;
+  /* Текст */
+  color: #241400;
+}
+.umr .containerr .new-text {
+  margin: 171px 0;
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  display: flex;
+  justify-content: center;
+  color: #241400;
+}
+.umr .containerr .swiper-button-next,
+.umr .containerr .swiper-button-prev,
+.umr .containerr .swiper-pagination {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

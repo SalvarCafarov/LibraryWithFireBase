@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/bootstrap.css" />
+  <link rel="stylesheet" href="./contact.css" />
+  <link rel="stylesheet" href="./assets/footer.css" />
+  <link rel="stylesheet" href="/Library/joinUs/css/home.css" />
+  <script src="../joinUs/js/join.js" type="module" defer></script>
+  <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="./STYLE/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="umr">
+    <header class=" fixed-top bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg mt-3  px-0 d-flex justify-content-around">
+          <a class="navbar-brand" href="#">
+            <img src="/Library/joinUs/img/logo-color.svg" alt="logo">
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="../joinUs/img/endir.png" alt="loq"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <ul class="nav w-100 justify-content-center ">
+                <li class="nav-item ">
+                  <a class="nav-link  text-dark nav-active" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../catalogPage/catalogPage.html">Catalog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../aboutPage/about.html">About Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark " href="../contactPage/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark  " href="../searchPage/searchPage.html">Search</a>
+                </li>
+                <li class="rght">
+                  <a id="myBtn" href="#">
+                    <img class="modimg" src="/Library/joinUs/img/user.svg" alt="user">
+                    <p class="jn">Join Us</p>
+                    <div class="join">
+                      <div id="myModal" class="mod">
+                        <div class="modal-con">
+                          <h2 class="head">Join Us</h2>
+                          <form action="action_page.php" method="post">
+                            <div class="container">
+                              <input id="joinName" type="text" placeholder="Full name" name="uname" required>
+  
+                              <input id="joinEmail" type="email" placeholder="Email" name="psw" required>
+  
+                              <button class="jbtn" type="submit">Join</button>
+                            </div>
+                          </form>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="containerr">
+  
+      <div class="allbooks-head">
+        <h2 class="allbooks">All Books</h2>
+        <ul>
+          <li>Fantastic</li>
+          <li>Self-development</li>
+          <li>Baby </li>
+          <li>Clas </li>
+        </ul>
+  
+      </div>
+  
+      <div class="allcontainer-books">
+        <div class="slide-container swiper books-child">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper allBooksWrap">
+              
+  
+            </div>
+  
+          </div>
+          <div class="swiper-button-next swiper-button-next1"></div>
+          <div class="swiper-button-prev swiper-button-prev1"></div>
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+  
+      </div>
+  
+  
+      <div class="bestseller-container">
+        <h2 class="bestseller">Besteller</h2>
+        <div class="slide-container swiper">
+          <div class="slide-content slide-content2">
+            <div class="card-wrapper swiper-wrapper"></div>
+          </div>
+          <div class="swiper-button-next swiper-button-next222"></div>
+          <div class="swiper-button-prev swiper-button-prev222"></div>
+          <div class="swiper-pagination swiper-pagination222"></div>
+        </div>
+  
+  
+      </div>
+  
+  
+      <div class="newrelease-container">
+        <h2 class="new-text">New releases</h2>
+        <div class="slide-container swiper">
+          <div class="slide-content slide-content3">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./book.png" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Konstantin Koptelov</h2>
+                  <button class="button">READ MORE</button>
+  
+                </div>
+              </div>
+  
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./image 2.png" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Konstantin Koptelov</h2>
+                  <button class="button">READ MORE</button>
+  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./image 3.png" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Konstantin Koptelov</h2>
+                  <button class="button">READ MORE</button>
+  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./image 4.png" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Konstantin Koptelov</h2>
+                  <button class="button">READ MORE</button>
+  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./image 5.png" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Konstantin Koptelov</h2>
+                  <button class="button">READ MORE</button>
+  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img src="./image 6.png" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Konstantin Koptelov</h2>
+                  <button class="button">READ MORE</button>
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-button-next3"></div>
+          <div class="swiper-button-prev swiper-button-prev3"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <div class="row m-0">
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-4 p-0">
+              <div class="text-center text-main">
+                <h1 class="h3 mb-4 follow">Follow us on social media</h1>
+                <div class="d-flex justify-content-between footer-icons">
+                  <div class="col-md-3 m-2">
+                    <a href="facebook.com">
+                      <img src="./photos/facebook.png" alt="facebook" /></a>
+                  </div>
+                  <div class="col-md-3 m-2">
+                    <a href="twitter.com"><img src="./photos/twitter.png" alt="twitter" /></a>
+                  </div>
+                  <div class="col-md-3 m-2">
+                    <a href="instagram.com">
+                      <img src="./photos/instagram.png" alt="instagram" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-12 mt-5 p-0 footer-main">
+          <div class="p-4 pb-0 m-0">
+            <div class="container">
+              <div class="row py-4 align-items-center">
+                <div class="col-md-4">
+                  <div class="footer-logo mb-4 mb-lg-0">
+                    <img width="200" src="./photos/footer logo.png" alt="footer-logo" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="footer-title d-flex">
+                      <div class="col-md-4">
+                        <ul class="p-0">
+                          <li class="footer-list-title">Popular</li>
+                          <li class="footer-list-group">Programming</li>
+                          <li class="footer-list-group">Books for children</li>
+                          <li class="footer-list-group">Psychology</li>
+                          <li class="footer-list-group">Business</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <ul class="p-0">
+                          <li class="footer-list-title">Cash</li>
+                          <li class="footer-list-group">Delivery</li>
+                          <li class="footer-list-group">Payment</li>
+                          <li class="footer-list-group">About the Store</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <ul class="p-0">
+                          <li class="footer-list-title">Help</li>
+                          <li class="footer-list-group">Contacts</li>
+                          <li class="footer-list-group">Purchase returns</li>
+                          <li class="footer-list-group">Buyer help</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <ul class="p-0 align-items-center justify-content-center">
+                    <li class="call-number">
+                      <p class="number">+38 (071) 339-16-26</p>
+                    </li>
+                    <button class="requestCall">Request call</button>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <div class="footer-privacy mx-auto text-center">
+                    <p>
+                      All rights reserved © 2003-2021 LIBRARY TERMS OF USE |
+                      Privacy Policy
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!--script start-->
+  <script src="./catalog.js" type="module"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+    </script>
+  <script src="./swiper-bundle.min.js"></script>
+  <!--script finish-->
+</body>
+
+</html>
