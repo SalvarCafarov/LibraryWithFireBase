@@ -27,9 +27,34 @@ var searchButton = document.querySelector("#searchButton");
 var image = document.querySelector(".card-img");
 var name = document.querySelector(".name");
 var cardWrappper = document.querySelector(".carousel-inner");
+
+
+
 onValue(ref(db, "/Books"), async (sp) => {
   let z = await sp.val();
   let arr = Object.entries(z);
+
+  let lastBook = arr[arr.length-1][1];
+  console.log(lastBook);
+  cardWrappper.innerHTML = `<div class="carousel-item active">
+      <div class="itemC">
+        <div class="itemLeft">
+          <img src="${lastBook.bookimgUrl}">
+        </div>
+        <div class="itemRight">
+          <div class="bookName">
+          ${lastBook.bookName}
+          </div>
+          <div class="bookAuthor">
+          ${lastBook.authorname}
+          </div>
+          <div class="bookDescription">
+          ${lastBook.desription}
+          </div>
+        </div>
+      </div>
+    </div>`;
+
   // ----------
   searchButton.addEventListener("click", function () {
     cardWrappper.innerHTML=""
