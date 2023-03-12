@@ -70,18 +70,18 @@ body {
   -moz-border-radius: 0%;
   -ms-border-radius: 0%;
   -o-border-radius: 0%;
-  margin-left: -25px;
 }
 
 .requestCall:hover {
   border: 1px solid #e16a00;
   color: #e16a00;
 }
-.call-number {
-  list-style: none;
-}
 .footer-list-group {
   list-style: none;
+}
+.number {
+  font-size: 12px !important;
+  font-weight: 1000 !important;
 }
 /* grid */
 @media (max-width: 991.99px) {
