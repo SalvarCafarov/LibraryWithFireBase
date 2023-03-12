@@ -26,8 +26,44 @@ body .owl-carousel .owl-nav > div {
   margin-top: 120px;
   width: 100%;
 }
+.umr .containerr .all-books button {
+  background-color: #FFFAF5;
+  border: 0;
+}
+.umr .containerr .all-books .head {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.umr .containerr .all-books .head .left {
+  min-width: 80px;
+}
+.umr .containerr .all-books .head .left button {
+  width: 100%;
+}
+.umr .containerr .all-books .head .right {
+  display: flex;
+  overflow-y: hidden;
+  margin-left: 10%;
+}
+.umr .containerr .all-books .head .right button {
+  margin: 0 50px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.umr .containerr .all-books .head .right button:hover {
+  background-color: red;
+  color: white;
+}
+.umr .containerr .all-books .head .right::-webkit-scrollbar {
+  display: none;
+}
 .umr .containerr .slideer {
   margin-top: 100px;
+}
+.umr .containerr .slideer .owl-carousel {
+  margin-top: 50px;
 }
 .umr .containerr .slideer .owl-carousel .item {
   margin: auto;

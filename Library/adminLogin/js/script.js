@@ -21,12 +21,18 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-
 const local = "LOCAL";
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const adminJoin = document.querySelector(".adminJoin");
 const check = document.querySelector('#check');
+
+
+
+
+
+
+
 adminJoin.addEventListener("click", (e) => {
   e.preventDefault();
   let x = {

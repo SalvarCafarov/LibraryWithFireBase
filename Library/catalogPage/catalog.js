@@ -21,6 +21,9 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
+const allBooksWrap = document.querySelector(".owl1");
+const catBtn = document.querySelectorAll(".catBtn");
+//OWL   /////////////////////////////////////////////////
 
 $(".owl1").owlCarousel({
   margin: 30,
@@ -37,7 +40,8 @@ $(".owl1").owlCarousel({
   autoplayTimeout: 3000,
   dotsEach: true,
   responsive: {
-    4: { items: 1 },
+    0: { items: 1 },
+    400: { items: 1 },
     576: { items: 2 },
     700: { items: 3 },
     900: { items: 4 },
@@ -68,8 +72,7 @@ $(".owl2").owlCarousel({
   },
   nav: true,
 });
-const allBooksWrap = document.querySelector(".owl1");
-console.log(allBooksWrap);
+
 function resetOwl() {
   let owlLength = $(".owl1 .item").length;
   for (let i = 0; i < owlLength; i++) {
@@ -78,13 +81,12 @@ function resetOwl() {
       .trigger("refresh.owl.carousel");
   }
 }
-  onValue(ref(db, "/Books"), async (sp) => {
-    let z = await sp.val();
-    let arr = Object.entries(z);
-    resetOwl();
-    arr.forEach((e) => {
-      console.log(e);
-      let all = `<div class="item">
+onValue(ref(db, "/Books"), async (sp) => {
+  let z = await sp.val();
+  let arr = Object.entries(z);
+  resetOwl();
+  arr.forEach((e) => {
+    let all = `<div class="item">
       <div class="item-inner">
         <div class="img"><img src="${e[1].bookimgUrl}" alt=""></div>
         <div class="name">${e[1].bookName}</div>
@@ -92,43 +94,55 @@ function resetOwl() {
         <div class="readmore"><button>Read More</button></div>
       </div>
     </div>`;
-     if(e[1].sell){
-      let bestseller =`<div class="item">
+    if (e[1].sell) {
+      let bestseller = `<div class="item">
       <div class="item-inner">
         <div class="img"><img src="${e[1].bookimgUrl}" alt=""></div>
         <div class="name">${e[1].bookName}</div>
         <div class="author">${e[1].authorname}</div>
         <div class="readmore"><button>Read More</button></div>
       </div>
-    </div>`
-    $(".owl2").trigger("add.owl.carousel", [all]);
-    $(".owl2").trigger("refresh.owl.carousel");
-
-     }
-     e[1].publish
-     if(e[1].publish){
-      let bestseller =`<div class="item">
+    </div>`;
+      $(".owl2").trigger("add.owl.carousel", [all]);
+      $(".owl2").trigger("refresh.owl.carousel");
+    }
+    e[1].publish;
+    if (e[1].publish) {
+      let bestseller = `<div class="item">
       <div class="item-inner">
         <div class="img"><img src="${e[1].bookimgUrl}" alt=""></div>
         <div class="name">${e[1].bookName}</div>
         <div class="author">${e[1].authorname}</div>
         <div class="readmore"><button>Read More</button></div>
       </div>
-    </div>`
-    $(".owl2").trigger("add.owl.carousel", [all]);
-    $(".owl2").trigger("refresh.owl.carousel");
+    </div>`;
+      $(".owl2").trigger("add.owl.carousel", [all]);
+      $(".owl2").trigger("refresh.owl.carousel");
+    }
+    $(".owl1").trigger("add.owl.carousel", [all]);
+    $(".owl1").trigger("refresh.owl.carousel");
+  });
+});
 
-     }
-
-
-
-
-
-
-      $(".owl1").trigger("add.owl.carousel", [all]);
-      $(".owl1").trigger("refresh.owl.carousel");
-     
+catBtn.forEach((e) => {
+  e.addEventListener("click", (k) => {
+    onValue(ref(db, "/Books"), async (sp) => {
+      let z = await sp.val();
+      let arr = Object.entries(z);
+      arr.forEach(z=>{
+        let type = `<div class="item">
+      <div class="item-inner">
+        <div class="img"><img src="${z[1].bookimgUrl}" alt=""></div>
+        <div class="name">${z[1].bookName}</div>
+        <div class="author">${z[1].authorname}</div>
+        <div class="readmore"><button>Read More</button></div>
+      </div>
+    </div>`;
+        if(z[1].booktype.trim().toLowerCase()==e.innerHTML.trim().toLowerCase()){
+          $(".owl1").trigger("add.owl.carousel", [all]);
+          $(".owl1").trigger("refresh.owl.carousel");
+        }
+      })
     });
   });
-
-
+});
