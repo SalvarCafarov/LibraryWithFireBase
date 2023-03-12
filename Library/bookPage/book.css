@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: #E5E5E5; */
 }
 
 .book-container {
@@ -10,34 +9,40 @@
     width: 1140px;
     margin: 100px auto;
 }
-
-
-
+.book-img  {
+    width: 100%;
+    margin: 0 auto;
+}
 .book-img img {
-    width: 409px;
-    height: 368px;
     display: flex;
     padding-top: 50px;
-    padding-left: 93px;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    padding-left: 30px;
+    height: 500px;
 }
 
-.btn {
+.book-btn {
     background: #E16A00;
-    padding: 9px 20px;
     border: none;
     color: white;
-    margin-top: 40px;
+}
+.book-btn a{
+    color: white;
+    text-decoration: none;
+}
+.book-btn a:hover{
+    color: white!important;
+    text-decoration: none!important;
 }
 
 .year {
     background: #2F80ED;
     color: white;
-    width: 69px;
     height: 36px;
     text-align: center;
-    padding: 10px 12px;
     margin-top: 40px;
 }
 
@@ -69,7 +74,6 @@
 }
 
 .book-about {
-    font-weight: 500;
     font-size: 14px;
     line-height: 196.19%;
     color: #241400;
@@ -151,76 +155,4 @@
 
 .social-main img {
     margin: 17px;
-}
-@media only screen and (max-width: 1200px) {
-    .book-container{
-        width: 1000px;
-    }
-    .book-text{
-        padding-left: 10px;
-    }
-}
-@media only screen and (max-width: 1100px) {
-    .book-container{
-        width: 800px;
-    }
-    .book-text{
-        padding-left: 15px;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .book-container{
-        width: 600px;
-        display: block;
-    }
-    .book-text{
-        width: 100%;
-        padding: 20px 40px;
-    }
-    .book-comment{
-        width: 90%;
-    }
-    .book-comment-box {
-        width: 600px;
-        margin-left: 0px;
-    }
-    .book-img img{
-        padding-left: 10px;
-    }
-}
-@media only screen and (max-width: 720px) {
-    .book-container{
-        width: 500px;
-        display: block;
-    }
-    .inpt{
-        width: 400px!important;
-    }
-    .book-comment-box {
-        width: 500px;
-    }
-    .book-comment{
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 620px) {
-    .book-comment{
-        width: 90%;
-    }
-    .book-comment-box {
-        width: 400px;
-    }
-
-}
-@media only screen and (max-width: 520px) {
-    .book-container{
-        width: 400px;
-    }
-    .inpt{
-        width: 300px!important;
-    }
-    .book-comment-box {
-        width: 400px;
-        margin-left: 0px;
-    }
 }
