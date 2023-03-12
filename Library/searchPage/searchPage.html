@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Search Page</title>
+  <link rel="stylesheet" href="../header/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../header/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../header/css/joinus.css">
+
+  <link rel="stylesheet" href="../header/css/owl.carousel.min.css">
   <link rel="stylesheet" href="../bookPage/assets/footer.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./assets/bootstrap.css">
@@ -24,64 +31,56 @@
 </head>
 
 <body>
-  <header class=" fixed-top e">
+  <nav class="navbar navbar-expand-md navbar-white " style="padding:0 20px;">
     <div class="container">
-      <nav class="navbar navbar-expand-lg mt-3  px-0 d-flex justify-content-around">
-        <a class="navbar-brand" href="#">
-          <img src="../joinUs/img/logo-color.svg" alt="logo">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><img src="../joinUs/img/endir.png" alt="loq"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav " style="width: 100%;">
-            <ul class="nav w-100 justify-content-center ">
-              <li class="nav-item ">
-                <a class="nav-link  text-dark nav-active" href="../../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="../catalogPage/catalogPage.html">Catalog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="../aboutPage/about.html">About Store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark " href="../contactPage/contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark  " href="../searchPage/searchPage.html">Search</a>
-              </li>
-              <li class="rght">
-                <a id="myBtn" href="#">
-                  <img class="modimg" src="../joinUs/img/user.svg" alt="user">
-                  <p class="jn">Join Us</p>
-                  <div class="join">
-                    <div id="myModal" class="mod">
-                      <div class="modal-con">
-                        <h2 class="head">Join Us</h2>
-                        <form action="action_page.php" method="post">
-                          <div class="container">
-                            <input id="joinName" type="text" placeholder="Full name" name="uname" required>
-
-                            <input id="joinEmail" type="email" placeholder="Email" name="psw" required>
-
-                            <button class="jbtn" type="submit">Join</button>
-                          </div>
-                        </form>
+      <a class="navbar-brand" href="index.html"><img src="/Library/header/img/logo-color.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+        aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img class="bars-icon" src="/Library/header/img/endir (1).png" alt="az"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../catalogPage/catalogPage.html">Catalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../aboutPage/about.html">About Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contactPage/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../searchPage/searchPage.html">Search</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto right-ul">
+          <li class="nav-item cta-btn">
+            <a id="myBtn" href="#">
+              <img class="modimg" src="/Library/header/img/user.svg" alt="user" />
+              <p class="jn">Join Us</p>
+              <div class="join">
+                <div id="myModal" class="mod">
+                  <div class="modal-con">
+                    <h2 class="head">Join Us</h2>
+                    <form action="action_page.php" method="post">
+                      <div class="container">
+                        <input id="joinName" type="text" placeholder="Full name" name="uname" required />
+                        <input id="joinEmail" type="email" placeholder="Email" name="psw" required />
+                        <button class="jbtn" type="submit">Join</button>
                       </div>
-
-                    </div>
+                    </form>
                   </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
   <div class="containers">
     <div class="left">
       <div class="header">
@@ -218,10 +217,16 @@
   <!--script start-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
-    </script>
+  </script>
+    <script src="../header/js/jquery-3.3.1.min.js"></script>
+    <script src="../header/js/popper.min.js"></script>
+    <script src="../header/js/bootstrap.min.js"></script>
+    <script src="../header/js/jquery.sticky.js"></script>
+    <script src="..//header/js/main.js"></script>
+    <script src="..//header/js/join.js"></script>
   <!--script finish-->
   <script src="./search.js" type="module"></script>
   <script src="https://kit.fontawesome.com/558b0d9e50.js" crossorigin="anonymous"></script>
