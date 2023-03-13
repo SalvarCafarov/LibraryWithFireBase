@@ -1,5 +1,3 @@
-/*general*/
-
 body {
   background-color: rgba(255, 250, 246, 255);
 }
@@ -15,11 +13,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /*footer*/
 
 .follow {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 25px;
   line-height: 196.19%;
@@ -59,7 +56,7 @@ body {
   list-style: none;
 }
 .requestCall {
-  background-color: #391F00;
+  background-color: #391f00;
   width: 136px;
   height: 40px;
   border: 1px solid #e16a00;
@@ -83,6 +80,20 @@ body {
   font-size: 12px !important;
   font-weight: 1000 !important;
 }
+.twitter:hover {
+  opacity: 0.5;
+  
+}
+.facebook:hover {
+  opacity: 0.5;
+}
+.instagram:hover {
+  opacity: 0.5;
+}
+.text-center h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
 /* grid */
 @media (max-width: 991.99px) {
   .footer-title {
@@ -92,7 +103,7 @@ body {
     align-items: center;
     text-align: center;
   }
-  .footer-list-group  {
+  .footer-list-group {
     display: none;
   }
   .header-actived {
