@@ -97,7 +97,17 @@ $(".owl3").owlCarousel({
   },
   nav: true,
 });
+let prevbtn=document.querySelectorAll(".owl-prev span")
+let nextbtn=document.querySelectorAll(".owl-next span")
 
+console.log(prevbtn);
+for (const e of prevbtn) {
+  e.innerHTML=`<i class="fa fa-chevron-left"></i>`
+}
+for (const e of nextbtn) {
+  e.innerHTML=`<i class="fa fa-chevron-right"></i>`
+}
+ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 function resetOwl() {
   let owlLength = $(".owl1 .item").length;
   for (let i = 0; i < owlLength; i++) {
@@ -159,7 +169,9 @@ if (g) {
     let z = await sp.val();
     let arr = Object.entries(z);
     resetOwl();
+    
     arr.forEach((e) => {
+      console.log("121212",e)
       let all = `<div class="item">
         <div class="item-inner">
           <div class="img"><img src="${e[1].bookimgUrl}" alt=""></div>
@@ -172,10 +184,22 @@ if (g) {
         $(".owl1").trigger("add.owl.carousel", [all]);
         $(".owl1").trigger("refresh.owl.carousel");
       }
-      
+      catBtn.forEach(son=>{
+        if(son.innerHTML==g){
+         son.style.backgroundColor="red"
+         son.style.color="white"
+  
+        }
+        else{
+          son.style.backgroundColor="#fffaf5"
+         son.style.color="black"
+  
+        }
+      })
      
       
     });
+    
   });
 }
 else{
@@ -235,10 +259,21 @@ catBtn.forEach((e) => {
           $(".owl1").trigger("refresh.owl.carousel");
         }
       });
+      catBtn.forEach(son=>{
+        if(son.innerHTML==e.innerHTML){
+         son.style.backgroundColor="red"
+         son.style.color="white"
+
+        }
+        else{
+          son.style.backgroundColor="#fffaf5"
+         son.style.color="black"
+
+        }
+      })
     });
   });
 });
-localStorage.setItem("TYPES", JSON.stringify(""));
 
 
 
@@ -248,7 +283,7 @@ let t = JSON.parse(localStorage.getItem("READMORE") );
 
   if(!t){
     localStorage.setItem("READMORE", JSON.stringify(e.currentTarget.dataset.id));
-
   }
   
 })
+localStorage.setItem("TYPES", JSON.stringify(""));

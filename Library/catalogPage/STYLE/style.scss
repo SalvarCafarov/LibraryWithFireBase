@@ -73,6 +73,15 @@ body .owl-carousel .owl-nav > div {
       margin-top: 100px;
       .owl-carousel {
         margin-top: 50px;
+        .owl-prev ,.owl-next{
+          position: absolute;
+          top: 40%;
+          
+            i{
+              font-size: 30px;
+            }
+          
+        }
         .item {
           margin: auto;
           height: 332px;

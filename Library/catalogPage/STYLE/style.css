@@ -75,6 +75,13 @@ body .owl-carousel .owl-nav > div {
 .umr .containerr .slideer .owl-carousel {
   margin-top: 50px;
 }
+.umr .containerr .slideer .owl-carousel .owl-prev, .umr .containerr .slideer .owl-carousel .owl-next {
+  position: absolute;
+  top: 40%;
+}
+.umr .containerr .slideer .owl-carousel .owl-prev i, .umr .containerr .slideer .owl-carousel .owl-next i {
+  font-size: 30px;
+}
 .umr .containerr .slideer .owl-carousel .item {
   margin: auto;
   height: 332px;
