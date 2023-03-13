@@ -63,7 +63,7 @@ body .owl-carousel .owl-nav > div {
   line-height: 196.19%;
 }
 .umr .containerr .all-books .head .right button:hover {
-  background-color: red;
+  background-color: rgb(225, 106, 0);
   color: white;
 }
 .umr .containerr .all-books .head .right::-webkit-scrollbar {

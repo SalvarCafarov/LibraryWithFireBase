@@ -256,7 +256,7 @@ addBtnBook.addEventListener("click", (e) => {
     let id = push(ref(db, "/Books")).key;
     set(ref(db, "/Books/" + id), formData);
     Swal.fire({
-      position: "top-end",
+      position: "center",
       icon: "success",
       title: "Book has been added",
       showConfirmButton: false,

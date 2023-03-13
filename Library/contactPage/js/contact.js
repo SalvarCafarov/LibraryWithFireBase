@@ -37,6 +37,13 @@ btn.addEventListener("click", function () {
     addressContact.value.trim() === "" ||
     phoneContact.value.trim() === ""
   ) {
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Fill the gaps",
+      showConfirmButton: false,
+      timer: 1500,
+    });
     sendContact = true;
     return;
   }

@@ -186,7 +186,7 @@ if (g) {
       }
       catBtn.forEach(son=>{
         if(son.innerHTML==g){
-         son.style.backgroundColor="red"
+         son.style.backgroundColor="rgba(225, 106, 0, 1)"
          son.style.color="white"
   
         }
@@ -261,7 +261,7 @@ catBtn.forEach((e) => {
       });
       catBtn.forEach(son=>{
         if(son.innerHTML==e.innerHTML){
-         son.style.backgroundColor="red"
+         son.style.backgroundColor="rgba(225, 106, 0, 1)"
          son.style.color="white"
 
         }

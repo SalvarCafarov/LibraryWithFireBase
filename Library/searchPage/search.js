@@ -28,13 +28,11 @@ var image = document.querySelector(".card-img");
 var name = document.querySelector(".name");
 var cardWrappper = document.querySelector(".carousel-inner");
 
-
-
 onValue(ref(db, "/Books"), async (sp) => {
   let z = await sp.val();
   let arr = Object.entries(z);
 
-  let lastBook = arr[arr.length-1][1];
+  let lastBook = arr[arr.length - 1][1];
   console.log(lastBook);
   cardWrappper.innerHTML = `<div class="carousel-item active">
       <div class="itemC">
@@ -57,11 +55,14 @@ onValue(ref(db, "/Books"), async (sp) => {
 
   // ----------
   searchButton.addEventListener("click", function () {
-    cardWrappper.innerHTML=""
-
-    for (let book in arr) {
-     if(book==0){
-      cardWrappper.innerHTML += `<div class="carousel-item active">
+   if(value.value){
+    
+   }
+      cardWrappper.innerHTML = "";
+      console.log();
+      for (let book in arr) {
+        if (book == 0) {
+          cardWrappper.innerHTML += `<div class="carousel-item active">
       <div class="itemC">
         <div class="itemLeft">
           <img src="${arr[0][1].bookimgUrl}">
@@ -79,11 +80,15 @@ onValue(ref(db, "/Books"), async (sp) => {
         </div>
       </div>
     </div>`;
-     }else{
-      if (arr[book][1].bookName.toLowerCase().includes(value.value.toLowerCase())) {
-        console.log(book);
+        } else {
+          if (
+            arr[book][1].bookName
+              .toLowerCase()
+              .includes(value.value.toLowerCase())
+          ) {
+            console.log(book);
 
-        cardWrappper.innerHTML += `<div class="carousel-item ">
+            cardWrappper.innerHTML += `<div class="carousel-item ">
         <div class="itemC">
           <div class="itemLeft">
             <img src="${arr[book][1].bookimgUrl}">
@@ -101,9 +106,10 @@ onValue(ref(db, "/Books"), async (sp) => {
           </div>
         </div>
       </div>`;
+          }
+        }
       }
-     }
-    }
+    
   });
 });
 

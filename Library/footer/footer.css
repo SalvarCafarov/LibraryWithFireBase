@@ -56,9 +56,12 @@ body {
   list-style: none;
 }
 .requestCall {
+  position: absolute;
+  margin-left: -25px;
   background-color: #391f00;
   width: 136px;
   height: 40px;
+  margin-left: -25px;
   border: 1px solid #e16a00;
   border-radius: 0%;
   color: #e16a00;
@@ -120,6 +123,9 @@ body {
   }
   .footer-icons img {
     width: 50px;
+  }
+  .requestCall, .number {
+    display: none;
   }
 }
 @media (max-width: 280px) {

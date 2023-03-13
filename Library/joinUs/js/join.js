@@ -41,6 +41,10 @@ btn.addEventListener("click", function () {
   modal.style.display = "block";
 
 });
+jbtn.addEventListener("click", function () {
+  modal.style.display = "none";
+
+});
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -57,6 +61,7 @@ jbtn.addEventListener("click", (e) => {
     let y = push(x).key;
     set(ref(db, "/joinUs/" + y), formData);
     console.log(joinName.value)
+    modal.style.display = "none";
   }
   
 });

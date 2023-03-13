@@ -51,6 +51,13 @@ adminJoin.addEventListener("click", (e) => {
       window.location.href = "http://127.0.0.1:5500/Library/admin/admin.html";
     } else{
       check.style.display = "block";
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Are you sure you are Admin?",
+        showConfirmButton: false,
+        timer: 1500,
+      });
     }
   });
 });

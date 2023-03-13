@@ -57,24 +57,25 @@ header {
   }
   .slider {
     width: 60%;
-    margin-top: 87px;
+    margin-top: 107px;
     .carousel-inner {
       width: 90%;
       .carousel-item {
         .itemC {
+          height: 300px;
           display: flex;
           background: #ffffff;
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
           padding: 31px;
-          max-height: 400px;
           overflow: hidden;
           .itemLeft {
             width: 35%;
             min-height: 200px;
             min-width: 150px;
             img {
-                padding: 10px;
-              width: 100%;
+              padding: 10px;
+              width: 80%;
+              height: 100%;
               min-height: 200px;
               min-width: 150px;
             }
@@ -83,6 +84,8 @@ header {
             padding-left: 10px;
             width: 65%;
             .bookName {
+              max-height: 40px;
+              overflow: hidden;
               font-family: "Montserrat";
               font-style: normal;
               font-weight: 700;
@@ -122,79 +125,79 @@ header {
     }
   }
 }
-@media (min-width: 801px) and (max-width: 1000px){
-    .containers {
-        .slider {
-          width: 60%;
-          margin-top: 87px;
-          .carousel-inner {
-            width: 90%;
-            .carousel-item {
-              .itemC {
-                display: flex;
-                background: #ffffff;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-                padding: 21px;
-                max-height: 400px;
-                overflow: hidden;
-                .itemLeft {
-                  width: 30%;
-                  min-height: 200px;
-                  min-width: 150px;
-                  img {
-                      padding: 10px;
-                    width: 100%;
-                    min-height: 200px;
-                    min-width: 150px;
-                  }
-                }
-                .itemRight {
-                  padding-left: 10px;
-                  width: 70%;
-                  .bookName {
-                    max-height: 50px;
-                    max-width: 328px;
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 18px;
-                  }
-                  .bookAuthor {
-                    max-height: 50px;
-                    max-width: 328px;
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                  }
-                  .bookDescription {
-                    max-height: 50px;
-                    max-width: 328px;
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 10px;
-                    line-height: 170.19%;
-                  }
-                }
+@media (min-width: 801px) and (max-width: 1000px) {
+  .containers {
+    .slider {
+      width: 60%;
+      margin-top: 87px;
+      .carousel-inner {
+        width: 90%;
+        .carousel-item {
+          .itemC {
+            display: flex;
+            background: #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+            padding: 21px;
+            max-height: 400px;
+            overflow: hidden;
+            .itemLeft {
+              width: 30%;
+              min-height: 200px;
+              min-width: 150px;
+              img {
+                padding: 10px;
+                width: 100%;
+                min-height: 200px;
+                min-width: 150px;
               }
             }
-          }
-          .carousel-control-prev {
-            .carousel-control-prev-icon {
-              position: absolute;
-              color: black !important;
-              right: 100%;
-            }
-          }
-          .carousel-control-next {
-            .carousel-control-next-icon {
-              position: absolute;
-              color: black !important;
+            .itemRight {
+              padding-left: 10px;
+              width: 70%;
+              .bookName {
+                max-height: 30px;
+                max-width: 328px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+              }
+              .bookAuthor {
+                max-height: 50px;
+                max-width: 328px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+              }
+              .bookDescription {
+                max-height: 50px;
+                max-width: 328px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 170.19%;
+              }
             }
           }
         }
       }
+      .carousel-control-prev {
+        .carousel-control-prev-icon {
+          position: absolute;
+          color: black !important;
+          right: 100%;
+        }
+      }
+      .carousel-control-next {
+        .carousel-control-next-icon {
+          position: absolute;
+          color: black !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
@@ -203,12 +206,13 @@ header {
     flex-direction: column;
     width: 90%;
     margin: auto;
-margin: auto;
+    margin-top: 100px;
 
     margin-top: 120px;
     .left {
       width: 100%;
       margin-left: 0;
+      height: 100px;
       .header {
         border: 0;
         h2 {
@@ -249,7 +253,7 @@ margin: auto;
       margin: auto;
       margin-left: 10%;
 
-      margin-top: 79px;
+      margin-top: 129px;
     }
   }
 }
@@ -292,7 +296,6 @@ margin: auto;
       }
     }
     .slider {
-
       width: 90%;
       margin: auto;
       margin-left: 10%;
@@ -307,18 +310,18 @@ margin: auto;
             overflow: hidden;
             display: flex;
             max-height: fit-content;
-              flex-direction: column;
+            flex-direction: column;
             .itemLeft {
               min-height: auto;
-                min-width: 100px;
-                width: 60%;
-                margin: auto;
-                
-                display: flex;
-                justify-content: center;
-                align-items: center;
+              min-width: 100px;
+              width: 60%;
+              margin: auto;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
               img {
-                  padding: 5px;
+                padding: 5px;
                 min-height: 150px;
                 min-width: 100px;
               }
@@ -359,136 +362,134 @@ margin: auto;
         .carousel-control-prev-icon {
           position: absolute;
           color: black !important;
-          right: 120%!important;
+          right: 120% !important;
         }
       }
       .carousel-control-next {
         .carousel-control-next-icon {
           position: absolute;
           color: black !important;
-left: 50%;
+          left: 50%;
         }
       }
     }
   }
 }
 @media (max-width: 400px) {
-    .containers {
-        margin: auto;
-        margin-top: 110px;
-        flex-direction: column;
-    
-        .left {
-          width: 100%;
-          margin-left: 0;
-          .header {
-            border: 0;
-            text-align: center;
-            h2 {
-              font-weight: 900;
-              font-size: 25px;
-              line-height: 196.19%;
-            }
-          }
-          .search {
-            width: 100%;
-            #searchBook {
-              height: 39px;
-              width: 100%;
-              background: #ffffff;
-              border: 1px solid #cecece;
-              border-radius: 5px;
-            }
-            #searchButton {
-              height: 39px;
-              margin-top: 20px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 21px;
-              text-align: center;
-            }
-          }
+  .containers {
+    margin: auto;
+    margin-top: 110px;
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      margin-left: 0;
+      .header {
+        border: 0;
+        text-align: center;
+        h2 {
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 196.19%;
         }
-        .slider {
-    
-          width: 90%;
-          margin: auto;
-          margin-left: 10%;
+      }
+      .search {
+        width: 100%;
+        #searchBook {
+          height: 39px;
+          width: 100%;
+          background: #ffffff;
+          border: 1px solid #cecece;
+          border-radius: 5px;
+        }
+        #searchButton {
+          height: 39px;
           margin-top: 20px;
-          display: flex;
-          flex-direction: column;
-          .carousel-inner {
-            width: 90%;
-            .carousel-item {
-              .itemC {
-                padding: 21px;
-                overflow: hidden;
-                display: flex;
-                max-height: fit-content;
-                  flex-direction: column;
-                .itemLeft {
-                  min-height: auto;
-                    min-width: 100px;
-                    width: 60%;
-                    margin: auto;
-                    
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  img {
-                      padding: 5px;
-                    min-height: 150px;
-                    min-width: 100px;
-                  }
-                }
-                .itemRight {
-                  padding-left: 10px;
-                  width: 100%;
-                  .bookName {
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 900;
-                    font-size: 20px;
-                    text-align: center;
-                    line-height: 190.19%;
-                  }
-                  .bookAuthor {
-                    text-align: center;
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 190.19%;
-                  }
-                  .bookDescription {
-                    text-align: center;
-                    margin-top: 5px;
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 140.19%;
-                  }
-                }
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+        }
+      }
+    }
+    .slider {
+      width: 90%;
+      margin: auto;
+      margin-left: 10%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      .carousel-inner {
+        width: 90%;
+        .carousel-item {
+          .itemC {
+            padding: 21px;
+            overflow: hidden;
+            display: flex;
+            max-height: fit-content;
+            flex-direction: column;
+            .itemLeft {
+              min-height: auto;
+              min-width: 100px;
+              width: 60%;
+              margin: auto;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                padding: 5px;
+                min-height: 150px;
+                min-width: 100px;
               }
             }
-          }
-          .carousel-control-prev {
-            .carousel-control-prev-icon {
-              position: absolute;
-              color: black !important;
-              right: 120%!important;
-            }
-          }
-          .carousel-control-next {
-            .carousel-control-next-icon {
-              position: absolute;
-              color: black !important;
-left: 50%;
+            .itemRight {
+              padding-left: 10px;
+              width: 100%;
+              .bookName {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 900;
+                font-size: 20px;
+                text-align: center;
+                line-height: 190.19%;
+              }
+              .bookAuthor {
+                text-align: center;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 190.19%;
+              }
+              .bookDescription {
+                text-align: center;
+                margin-top: 5px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 140.19%;
+              }
             }
           }
         }
       }
+      .carousel-control-prev {
+        .carousel-control-prev-icon {
+          position: absolute;
+          color: black !important;
+          right: 120% !important;
+        }
+      }
+      .carousel-control-next {
+        .carousel-control-next-icon {
+          position: absolute;
+          color: black !important;
+          left: 50%;
+        }
+      }
+    }
+  }
 }
-  

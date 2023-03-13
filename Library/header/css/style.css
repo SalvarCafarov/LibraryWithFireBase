@@ -54,6 +54,14 @@ a {
     width: 40px;
     height: 40px;
 }
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-item{
+    display: flex;
+    justify-content: center;
+}
 .navbar-nav li a{
     color:  black!important;
 }

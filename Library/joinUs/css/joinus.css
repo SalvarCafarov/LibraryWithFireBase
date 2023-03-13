@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+#myModal{
+    z-index: 500000;
+}
 .modal {
     position: fixed;
     z-index: 1;

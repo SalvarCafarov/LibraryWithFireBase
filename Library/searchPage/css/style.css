@@ -58,17 +58,17 @@ header {
 }
 .containers .slider {
   width: 60%;
-  margin-top: 87px;
+  margin-top: 107px;
 }
 .containers .slider .carousel-inner {
   width: 90%;
 }
 .containers .slider .carousel-inner .carousel-item .itemC {
+  height: 300px;
   display: flex;
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   padding: 31px;
-  max-height: 400px;
   overflow: hidden;
 }
 .containers .slider .carousel-inner .carousel-item .itemC .itemLeft {
@@ -78,7 +78,8 @@ header {
 }
 .containers .slider .carousel-inner .carousel-item .itemC .itemLeft img {
   padding: 10px;
-  width: 100%;
+  width: 80%;
+  height: 100%;
   min-height: 200px;
   min-width: 150px;
 }
@@ -87,6 +88,8 @@ header {
   width: 65%;
 }
 .containers .slider .carousel-inner .carousel-item .itemC .itemRight .bookName {
+  max-height: 40px;
+  overflow: hidden;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -149,7 +152,7 @@ header {
     width: 70%;
   }
   .containers .slider .carousel-inner .carousel-item .itemC .itemRight .bookName {
-    max-height: 50px;
+    max-height: 30px;
     max-width: 328px;
     font-family: "Montserrat";
     font-style: normal;
@@ -189,12 +192,13 @@ header {
     flex-direction: column;
     width: 90%;
     margin: auto;
-    margin: auto;
+    margin-top: 100px;
     margin-top: 120px;
   }
   .containers .left {
     width: 100%;
     margin-left: 0;
+    height: 100px;
   }
   .containers .left .header {
     border: 0;
@@ -233,7 +237,7 @@ header {
     width: 90%;
     margin: auto;
     margin-left: 10%;
-    margin-top: 79px;
+    margin-top: 129px;
   }
 }
 @media (max-width: 600px) {

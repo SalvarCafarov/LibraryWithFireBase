@@ -205,7 +205,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+#myModal{
+  z-index: 500;
+}
 .jn {
   padding-top: 18px;
   padding-left: 6px;
@@ -369,7 +371,8 @@ footer {
 }
 @media only screen and (max-width: 1140px) {
   .slider-main {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .slider-img {
