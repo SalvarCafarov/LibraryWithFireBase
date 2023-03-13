@@ -206,7 +206,7 @@ let allHistoryElementsSpan = document.querySelectorAll(".history .spanName");
 $(document).on("click", ".history p", async function (e) {
   arr.forEach((x) => {
     // console.log(e.target.innerHTML)
-    // console.log(x[1].volumeInfo.title)
+    // console.log(x[1].volumeInfo.ratingsCount)
 
     if (
       e.target.innerHTML.toLowerCase().trim() ==
@@ -220,6 +220,7 @@ $(document).on("click", ".history p", async function (e) {
         : (description.value =
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos distinctio repudiandae molestias nostrum, animi quos modi amet reiciendis sapiente voluptates!");
       booktype.value = x[1].volumeInfo.categories;
+      bookname.dataset.sell=x[1].volumeInfo.ratingsCount?x[1].volumeInfo.ratingsCount:"4";
       searchHistory.innerHTML = "";
       addBookSearch.value = "";
     }
@@ -249,7 +250,9 @@ addBtnBook.addEventListener("click", (e) => {
       description: description.value,
       addTime: `${x}`,
       booktype: booktype.value,
+      sell:bookname.dataset.sell
     };
+    console.log(formData)
     let id = push(ref(db, "/Books")).key;
     set(ref(db, "/Books/" + id), formData);
     Swal.fire({

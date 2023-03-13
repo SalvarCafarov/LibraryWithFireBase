@@ -27,8 +27,13 @@ body .owl-carousel .owl-nav > div {
   width: 100%;
 }
 .umr .containerr .all-books button {
-  background-color: #FFFAF5;
+  background-color: #fffaf5;
   border: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
 }
 .umr .containerr .all-books .head {
   margin: 0;
@@ -36,7 +41,7 @@ body .owl-carousel .owl-nav > div {
   justify-content: space-between;
 }
 .umr .containerr .all-books .head .left {
-  min-width: 80px;
+  min-width: 150px;
 }
 .umr .containerr .all-books .head .left button {
   width: 100%;
@@ -51,6 +56,11 @@ body .owl-carousel .owl-nav > div {
   border-radius: 10px;
   padding: 10px;
   transition: all 0.3s;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 196.19%;
 }
 .umr .containerr .all-books .head .right button:hover {
   background-color: red;

@@ -25,17 +25,22 @@ body .owl-carousel .owl-nav > div {
     margin-top: 120px;
     width: 100%;
     .all-books {
-      button{
-        background-color: #FFFAF5;
+      button {
+        background-color: #fffaf5;
         border: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 196.19%;
       }
       .head {
         margin: 0;
         display: flex;
         justify-content: space-between;
-        .left{
-          min-width: 80px;
-          button{
+        .left {
+          min-width: 150px;
+          button {
             width: 100%;
           }
         }
@@ -43,12 +48,17 @@ body .owl-carousel .owl-nav > div {
           display: flex;
           overflow-y: hidden;
           margin-left: 10%;
-          button{
+          button {
             margin: 0 50px;
             border-radius: 10px;
             padding: 10px;
-            transition: all .3s;
-            &:hover{
+            transition: all 0.3s;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 196.19%;
+            &:hover {
               background-color: red;
               color: white;
             }
@@ -145,7 +155,7 @@ body .owl-carousel .owl-nav > div {
     .containerr {
       margin-top: 120px;
       width: 100%;
-      
+
       .slideer {
         margin-top: 100px;
 
