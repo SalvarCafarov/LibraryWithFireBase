@@ -286,10 +286,11 @@ span.psw {
   padding-top: 16px;
 }
 
-@media (max-width: 1160.9px) {
-    .about-main {
-        display: grid;
-    }
+@media (max-width: 1408px) {
+  .about-main{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1100px) {
